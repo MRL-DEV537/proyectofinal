@@ -1,0 +1,294 @@
+@media (min-width:320px) and (max-width:425px) {
+    section {
+        .catalogopadre {
+            display: grid;
+            justify-content: center;
+            .catalogo {
+                display: grid;
+                margin-bottom: 115px;
+                width: 200px;
+                gap: 20px;
+                img {
+                    display: grid;
+                    width: 100%;
+                    border: solid;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    main {
+        .talles {
+            @include flex;
+            img {
+                width: 300px;
+            }
+        }
+        .dad {
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    section {
+        .allcontact {
+            .contactbox {
+                margin-right: 250px;
+            }
+            .padrecontact {
+                display: grid;
+                margin-right: 45px;
+                transition: 500ms;
+                &:hover {
+                    transform: scale(1.1);
+                }
+                .whycontact {
+                    box-shadow:orange 0 1px 2px, rgba(255, 255, 255, 0.35) 0 2px 4px, rgba(255, 255, 255, 0.35) 0 4px 8px, orange 0 8px 16px, rgba(255, 255, 255, 0.35) 0 16px 32px;
+                    color: white;
+                    margin-top: 100px;
+                    background-color: #1A1A1A;
+                    width: 200px;
+                    height: 500px;
+                    border-radius: 10px;
+                    ul {
+                        list-style: circle;
+                        color: wheat;
+                        margin-top: 100px;
+                        margin-bottom: 120px;
+                        img {
+                            margin-top: 20px;
+                            filter: invert(1);
+                            margin-left: 15px;
+                            width: 100px;
+                        }
+                        li {
+                            margin: 10px;
+                        }
+                    }
+                    h4  {
+                        margin: 10px 10px 10px 25px;
+                        color: orange;
+                        font-size: 2vh;
+                    }
+                }
+            }
+        }
+        .h2div {
+            @include flex;
+            justify-content: center;
+            .h2 {
+                margin-top: 80px;
+            }
+        }
+        .catalogopadre {
+            display: grid;
+            justify-content: center;
+            .catalogo {
+                grid-template-columns: repeat(3, 200px);
+                margin-bottom: 115px;
+                margin-right: 450px;
+                gap: 20px;
+                img {
+                    margin-bottom: 40px;
+                    transition: 500ms;
+                    &:hover {
+                        transform: scale(1.2);
+                        filter: brightness(0.5);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width:1024px) and (max-width:1200px) { 
+    main {
+        .talles {
+            @include flex;
+            img {
+                width: 300px;
+            }
+        }
+        .dad {
+            @extend %dadcard;
+            button {
+                transition: 500ms;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    section {
+        .allcontact {
+            .contactbox {
+                margin-right: 250px;
+            }
+            .padrecontact {
+                display: grid;
+                margin-right: 45px;
+                transition: 500ms;
+                &:hover {
+                    transform: scale(1.1);
+                }
+                .whycontact {
+                    box-shadow:orange 0 1px 2px, rgba(255, 255, 255, 0.35) 0 2px 4px, rgba(255, 255, 255, 0.35) 0 4px 8px, orange 0 8px 16px, rgba(255, 255, 255, 0.35) 0 16px 32px;
+                    color: white;
+                    margin-top: 100px;
+                    background-color: #1A1A1A;
+                    width: 200px;
+                    height: 500px;
+                    border-radius: 10px;
+                    ul {
+                        list-style: circle;
+                        color: wheat;
+                        margin-top: 100px;
+                        margin-bottom: 120px;
+                        img {
+                            margin-top: 20px;
+                            filter: invert(1);
+                            margin-left: 15px;
+                            width: 100px;
+                        }
+                        li {
+                            margin: 10px;
+                        }
+                    }
+                    h4  {
+                        margin: 10px 10px 10px 25px;
+                        color: orange;
+                        font-size: 2vh;
+                    }
+                }
+            }
+        }
+        .h2div {
+            @include flex;
+            justify-content: center;
+            .h2 {
+                margin-top: 80px;
+            }
+        }
+        .catalogopadre {
+            display: grid;
+            justify-content: center;
+            .catalogo {
+                grid-template-columns: repeat(3, 200px);
+                margin-bottom: 115px;
+                margin-right: 450px;
+                gap: 20px;
+                img {
+                    margin-bottom: 40px;
+                    transition: 500ms;
+                    &:hover {
+                        transform: scale(1.2);
+                        filter: brightness(0.5);
+                    }
+                }
+            }
+        }
+    }
+    %dadcard {
+        display: grid;
+        margin-bottom: 2vh;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width:1200px) {
+    main {
+        .talles {
+            @include flex;
+            img {
+                width: 400px;
+            }
+        }
+        .dad {
+            display: grid;
+            margin-bottom: 2vh;
+            justify-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            button {
+                transition: 500ms;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    section {
+        .allcontact {
+            display: flex;
+            justify-content: center;
+            .contactbox {
+                margin-right: 400px;
+            }
+            .padrecontact {
+                display: grid;
+                margin-right: 200px;
+                transition: 500ms;
+                &:hover {
+                    transform: scale(1.1);
+                }
+                .whycontact {
+                    box-shadow:orange 0 1px 2px, rgba(255, 255, 255, 0.35) 0 2px 4px, rgba(255, 255, 255, 0.35) 0 4px 8px, orange 0 8px 16px, rgba(255, 255, 255, 0.35) 0 16px 32px;
+                    color: white;
+                    margin-top: 100px;
+                    background-color: #1A1A1A;
+                    width: 200px;
+                    height: 500px;
+                    border-radius: 10px;
+                    ul {
+                        list-style: circle;
+                        color: wheat;
+                        margin-top: 100px;
+                        margin-bottom: 120px;
+                        img {
+                            margin-top: 20px;
+                            filter: invert(1);
+                            margin-left: 15px;
+                            width: 100px;
+                        }
+                        li {
+                            margin: 10px;
+                        }
+                    }
+                    h4  {
+                        margin: 10px 10px 10px 25px;
+                        color: orange;
+                        font-size: 2vh;
+                    }
+                }
+            }
+        }
+        .catalogopadre {
+            display: grid;
+            justify-content: center;
+            .catalogo {
+                grid-template-columns: repeat(3, 200px);
+                margin-bottom: 115px;
+                margin-right: 450px;
+                gap: 20px;
+                img {
+                    margin-bottom: 40px;
+                    transition: 500ms;
+                    &:hover {
+                        transform: scale(1.2);
+                        filter: brightness(0.5);
+                    }
+                }
+            }
+        }
+        .h2div {
+            @include flex;
+            justify-content: center;
+            .h2 {
+                margin-top: 51px;
+            }
+        }
+    }
+}
